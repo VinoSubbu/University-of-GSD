@@ -13,7 +13,13 @@ const LoginModal = ({ onLogin }) => {
     // Simple authentication logic
     if (username === 'student' && password === 'stu123') {
       onLogin(true);
-    } else {
+      navigate('/student')
+    }
+    else if (username === 'student1' && password === 'sam123') {
+      onLogin(true);
+      navigate('/student1')
+    }
+    else {
       setError('Invalid username or password');
     }
   };

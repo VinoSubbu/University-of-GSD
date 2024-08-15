@@ -15,6 +15,7 @@ import PrivateRoute from './components/PrivateRoute';
 import Admission from './components/Admission';
 import ContactUs from './components/ContactUs';
 import Faculty from './components/Faculty';
+import Student1 from './components/Student1';
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/faculty" element={<Faculty />} />
         <Route path="/student" element={<Student />} />
+        <Route path="/student1" element={<Student1 />} />
         {/* <Route path="/fees" element={<Fees />} /> */}
         <Route path="/course" element={<Course />} />
         <Route path="/admission" element={<Admission />} />
