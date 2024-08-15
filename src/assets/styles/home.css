@@ -1,0 +1,283 @@
+/* home.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* .home-header {
+    background: linear-gradient(to right top, #0076fb, #00a2ff, #00c0f3, #00d49b, #06df1b);
+    color: white;   
+    padding: 15px 0;
+    text-align: center;
+  } */
+      /* background: #092054; */
+
+
+  .home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: linear-gradient(to right top, #0076fb, #00a2ff, #00c0f3, #00d49b, #06df1b);
+    color: white;
+    /* margin: 0 auto; */
+  }
+  
+  .college-logo {
+    height: 110px; /* Adjust the height as needed */
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .header-text {
+    flex: 1;
+    /* text-align: center; */
+  }
+  
+  .header-text h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+  
+  .header-text p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  .home-nav {
+    display: flex;
+    justify-content: center;
+    /* background-color: #f1f1f1; */
+    background-color: white;
+    padding: 15px 0;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+.home-nav a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  /* color: #00c2f3; */
+  /* color: #4CAF50; */
+  font-size: 1.2em;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+
+.home-nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #4CAF50;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.home-nav a:hover {
+  /* color: black;  */
+  color: #4CAF50; 
+  /* text-transform: uppercase; */
+  /* font-size: 15px; */
+  transform: scale(1.1); 
+}
+
+.home-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.home-card {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  margin: 20px 30px;
+}
+
+.home-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-card h2 {
+  margin-top: 0;
+  color: #4CAF50;
+}
+
+.home-card ul {
+  padding-left: 20px;
+}
+
+.home-footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.home-footer p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #777;
+}
+
+
+.logout-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: #e60000;
+}
+
+
+/* scrollingParagraph.css */
+.scrolling-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 5px 0;
+  background-color: #f1f1f1;
+  position: relative;
+}
+
+.scrolling-paragraph {
+  display: inline-block;
+  animation: scrollLeft 30s linear infinite; /* Increased duration for slower scrolling */
+  white-space: nowrap;
+}
+
+.scrolling-paragraph {
+  font-weight: bold !important;
+}
+
+.scrolling-paragraph span {
+  display: inline-block;
+  /* padding-left: 100%; Adjust this if needed to fine-tune the seamless effect */
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scrolling-paragraph {
+  color: green;
+}
+
+.scrolling-paragraph .MuiSvgIcon-root {
+  color: inherit; /* Inherit color from the parent p tag */
+}
+
+.scrollicon {
+  color: red !important;
+}
+
+
+/* Carousel images scroll   */
+
+.carousel-container {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.carousel-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  /* background-color: #e60000; */
+  width: 40%;
+}
+
+.important-event-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns the content to the left */
+}
+
+.important-event-header h2 {
+  margin: 0;
+  display: flex;
+  align-items: center; /* Aligns the icon and text vertically */
+}
+
+.important-event-header h2 .MuiSvgIcon-root {
+  margin-left: 8px; /* Space between the text and the icon */
+}
+
+
+/* scrollingParagraphs.css */
+
+.scroll-from-bottom {
+  width: 100%; 
+  height: 200px; /* Adjust height as needed */
+  overflow: hidden;
+  position: relative;
+  /* border: 1px solid #ddd;  */
+  /* padding: 10px; */
+}
+
+.scroll-contentuh {
+  position: absolute;
+  width: 100%;
+  animation: scrollUp 20s linear infinite;
+}
+
+.scroll-contentuh p {
+  margin: 0;
+  padding: 5px 0; /* Space between paragraphs */
+  /* white-space: nowrap; */
+  margin-bottom: 15px;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+

@@ -1,0 +1,23 @@
+.examresult-module {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .examresult-module h2 {
+    margin-bottom: 20px;
+  }
+  
+  .exam-card, .result-card {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .exam-card p, .result-card p {
+    margin: 5px 0;
+  }
+  
